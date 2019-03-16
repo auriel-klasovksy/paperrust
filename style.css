@@ -1,0 +1,260 @@
+html {
+	margin: 0;
+	padding: 0;
+	}
+body { 
+	font: 75% georgia, curier-new;
+	line-height: 1.88889;
+	color: 'black'; 
+	background-color: #ddf9c1;
+	margin: 0; 
+	padding: 0;
+  text-align: center;
+
+    overflow: hidden;
+    height: 100%;
+	}
+header {
+  width: 100%;
+  height: 20%;
+  background-color: #f9a03f;
+  text-align: left;
+  font-size: 50px;
+	font-weight: bold;
+  z-index: 1;
+  padding-left: 190px;
+  color: 'black';
+}
+button {
+	border: none;
+	background: transparent;
+	border: 2px solid #000000;
+	border-radius: 8px;
+	padding: 1px 6px;
+	text-align: center;
+	display: inline-box;
+	font-size: 22px;
+	margin: 1px, 2px;
+	-wabkit-transition-duration: 0.4s; /*Safari*/
+	transition-duration: 0.4s;
+	cursor: pointer;
+	font-decoration: none;
+}
+button:hover {
+	background-color: #f9a03f;
+}
+p {
+	size: 15px;
+	text-decoration: underline;
+}
+div.nextButon	{
+	display: block;
+	position:absolute;
+	height: 100%;
+	width: 50px;
+	background-color: #f9a03f;
+	opacity: 0.5;
+}
+div.controller {
+	display:inline;
+	float: right;
+}
+div.disp	{
+	display:flex;
+	align: center;
+	float: left;
+}
+div.contDisplay	{
+	height: 60px;
+}
+div.contDisplay, p	{
+	position: relative;
+	right: 80%;
+	top: 30px;
+}
+div.colorPicker	{
+	background-color: #f9a03f;
+	display:inline;
+	border-style: solid;
+	border-width: 2px;
+	border-radius: 5px;
+	margin: 6px;
+	margin-bottom: 3px;
+	padding-top: 14px;
+	padding-left: 4px;
+	padding-right: 4px;
+	padding-bottom: 3px;
+	box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d; /* Add cool effects to your sliders! */
+}
+canvas {
+	position: absolute;
+	left: 20%;
+}
+canvas[resize] {
+    width: 50%;
+    height: 100%;
+}
+.make-me-sticky {
+  position: -webkit-sticky;
+	position: sticky;
+	top: 0;
+  height: 100%;
+  padding: 0 40px;
+}
+input {
+	outline: 0;
+	outline-style: none; -moz-outline-style:none;
+}
+input[type:"color"] {
+	border: none;
+}
+
+input[type=range] {
+	outline: none	;
+	cursor: pointer;
+  -webkit-appearance: none; /* Hides the slider so that custom slider can be made */
+  width: 100%; /* Specific width is required for Firefox. */
+  background: transparent; /* Otherwise white in Chrome */
+}
+input[type=range]:hover, input[type=range]:active {
+	outline: 0;
+}
+
+input[type=range]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+}
+
+input[type=range]:focus {
+  outline: none; /* Removes the blue border. You should probably do some kind of focus styling for accessibility reasons though. */
+}
+
+input[type=range]::-ms-track {
+  width: 100%;
+  cursor: pointer;
+outline: none;
+  /* Hides the slider so custom styles can be added */
+  background: transparent; 
+  border-color: transparent;
+  color: transparent;
+}
+/* Special styling for WebKit/Blink */
+input[type=range]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  border: 1px solid #000000;
+  height: 36px;
+  width: 16px;
+  border-radius: 3px;
+  background: #ddf9c1;
+  cursor: pointer;
+  margin-top: -14px; /* You need to specify a margin in Chrome, but in Firefox and IE it is automatic */
+  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d; /* Add cool effects to your sliders! */
+}
+
+/* All the same stuff for Firefox */
+input[type=range]::-moz-range-thumb {
+  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+  border: 1px solid #000000;
+  height: 36px;
+  width: 16px;
+  border-radius: 3px;
+  background: #f9a03f;
+  cursor: pointer;
+}
+
+/* All the same stuff for IE */
+input[type=range]::-ms-thumb {
+  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+  border: 1px solid #000000;
+  height: 36px;
+  width: 16px;
+  border-radius: 3px;
+  background: #ddf9c1;
+  cursor: pointer;
+}
+
+input::-moz-focus-inner { 
+  border: 0; 
+}
+
+input[type="color"] {
+  -webkit-appearance: none;
+  padding: 0;
+  border: none;
+  border-radius: 10px;
+  width: 20px;
+  height: 20px;
+}
+input[type="color"]::-webkit-color-swatch {
+  border: none;
+  border-radius: 10px;
+  padding: 0;
+}
+input[type="color"]::-webkit-color-swatch-wrapper {
+  border: none;
+  border-radius: 10px;
+  padding: 0;
+}
+input[type=range]::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 3px;
+	outline: none;
+  cursor: pointer;
+  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+  background: #000000;
+  border-radius: 1.3px;
+  border: 0.2px solid #010101;
+}
+
+input[type=range]:focus::-webkit-slider-runnable-track {
+  background: #000000;
+	outline: 0;
+border:0;
+}
+
+input[type=range]::-moz-range-track {
+  width: 100%;
+  height: 3px;
+	outline: none;
+  cursor: pointer;
+  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+  background: #000000;
+  border-radius: 1.3px;
+  border: 0.2px solid #010101;
+}
+
+input[type=range]::-ms-track {
+  width: 100%;
+  height: 3px;
+  cursor: pointer;
+	outline:none;
+  background: transparent;
+  border-color: transparent;
+  border-width: 12px 0;
+  color: transparent;
+}
+input[type=range]::-ms-fill-lower {
+  background: #000000;
+  border: 0.2px solid #010101;
+  border-radius: 2.6px;
+  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+	outline:none;
+
+}
+input[type=range]:focus::-ms-fill-lower {
+  background: #3071a9;
+	border: 0;
+	outline:none;
+}
+input[type=range]::-ms-fill-upper {
+  background: #3071a9;
+  border: 0.2px solid #010101;
+  border-radius: 2.6px;
+  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+	outline:none;
+
+}
+input[type=range]:focus::-ms-fill-upper {
+  background: #367ebd;
+	outline:none;
+
+}

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>paperRust</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="inputNumber.css">
+    <!-- Load the Paper.js library -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/paper.js/0.12.0/paper-full.min.js"></script>
+    <!-- Load external PaperScript and associate it with myCanvas -->
+    <script
+    			  src="http://code.jquery.com/jquery-3.3.1.min.js"
+    			  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    			  crossorigin="anonymous"></script>
+    		  </head>
+  <body>
+
+    <header>
+        Paper@Rust:~$I
+    </header>
+  <!--  <nav class="make-me-sticky">
+      <a> A thing </a>
+      <a> Another </a>
+      <a> And a third </a>
+    </nav>
+    <article class="main">
+      <p>Hey, my name is Auriel and I enjoy coding and stuff.</p>
+      <p>Have a look at my protfolio, its all open source and free to use, modify and publish.</p>
+    </article>-->
+    <div class="navigator">
+    </div>
+    <div class="nextButon">
+      <p>N</p>
+    </div>
+    <div class="disp">
+      <canvas id="rsv" align="center"  width="500px" height="500px"></canvas>
+      <script type="text/javascript" src="rsv3.js" canvas="shamanCanvas">
+      </script>
+    </div>
+    <div class="controller">
+      <p>Angle</p>
+      <div class="contDisplay">
+        <input id="angle" type="range" value="45" max="360">
+      </div>
+      <p>Colors</p>
+      <div class="contDisplay">
+        <button id="lesscolor1"> - </button>
+        <div class="colorPicker">
+          <input class="color1" type="color" id="color1" value="#ddf9c1">
+        </div>
+        <div class="colorPicker">
+          <input class="color1" type="color" id="color2" value="#f9a03f">
+        </div>
+        <button id="newcolor1"> + </button>
+      </div>
+      <div class="contDisplay">
+        <button id="lesscolor2"> - </button>
+        <div class="colorPicker">
+          <input class="color2" type="color" id="color3" value="#f8dda4">
+        </div>
+        <div class="colorPicker">
+          <input class="color2" type="color" id="color4" value="#813405">
+        </div>
+        <button id="newcolor2"> + </button>
+      </div>
+      <p> Sides and depth</p>
+      <div class="contDisplay">
+        <div class="quantity">
+          <input id="sides" type="number" min="3" max="16" step="1" value="4">
+        </div>
+        <div class="quantity">
+          <input id="depth" type="number" min="1" max="1000" step="1" value="10">
+        </div>
+      </div>
+    </div>
+  </body>
+  <script type="text/javascript" src="inputNumberStyle.js">
+  </script>
+</html>
