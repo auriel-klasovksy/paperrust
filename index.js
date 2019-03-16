@@ -1,4 +1,4 @@
-const express = require('express')
+const app = require('express')();
 var http = require('http').Server(app);
 var fs = require('fs');
 const PORT = process.env.PORT || 5000
