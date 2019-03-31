@@ -19,58 +19,87 @@
       <a> A thing </a>
       <a> Another </a>
       <a> And a third </a>
-    </nav>
+    </nav>-->
     <article class="main">
-      <p>Hey, my name is Auriel and I enjoy coding and stuff.</p>
+      <p>Hey, my name is Auriel and I enjoy coding beutifull things.</p>
       <p>Have a look at my protfolio, its all open source and free to use, modify and publish.</p>
-    </article>-->
-    <div class="navigator">
-    </div>
-    <div class="nextButon">
-      <p>N</p>
-    </div>
-    <div class="disp">
-      <canvas id="rsv" align="center"  width="500px" height="500px"></canvas>
-      <script type="text/javascript" src="rsv3.js" canvas="shamanCanvas">
-      </script>
-    </div>
-    <div class="controller">
-      <p>Angle</p>
-      <div class="contDisplay">
-        <input id="angle" type="range" value="45" max="360">
+      <p>If you are an employer pleas heave a look at my linkedin profile for a list of my more usefull skills</p>
+    </article>
+    <h1> Mandaloop </h1>
+    
+    <div class="artical">
+      <div class="disp">
+        <canvas id="rsv" align="center"  width="500px" height="500px" resize></canvas>
+        <script type="text/javascript" src="rsv3.js">
+        </script>
       </div>
-      <p>Colors</p>
-      <div class="contDisplay">
-        <button id="lesscolor1"> - </button>
-        <div class="colorPicker">
-          <input class="color1" type="color" id="color1" value="#ddf9c1">
+      <div class="controller">
+        <p>Angle</p>
+        <div class="contDisplay">
+          <input id="angle" type="range" value="45" max="360">
         </div>
-        <div class="colorPicker">
-          <input class="color1" type="color" id="color2" value="#f9a03f">
+        <p>Colors</p>
+        <div class="contDisplay">
+          <button id="lesscolor1"> - </button>
+          <div class="colorPicker">
+            <input class="color1" type="color" id="color1" value="#ddf9c1">
+          </div>
+          <div class="colorPicker">
+            <input class="color1" type="color" id="color2" value="#f9a03f">
+          </div>
+          <button id="newcolor1"> + </button>
         </div>
-        <button id="newcolor1"> + </button>
-      </div>
-      <div class="contDisplay">
-        <button id="lesscolor2"> - </button>
-        <div class="colorPicker">
-          <input class="color2" type="color" id="color3" value="#f8dda4">
+        <div class="contDisplay">
+          <button id="lesscolor2"> - </button>
+          <div class="colorPicker">
+            <input class="color2" type="color" id="color3" value="#f8dda4">
+          </div>
+          <div class="colorPicker">
+            <input class="color2" type="color" id="color4" value="#813405">
+          </div>
+          <button id="newcolor2"> + </button>
         </div>
-        <div class="colorPicker">
-          <input class="color2" type="color" id="color4" value="#813405">
-        </div>
-        <button id="newcolor2"> + </button>
-      </div>
-      <p> Sides and depth</p>
-      <div class="contDisplay">
-        <div class="quantity">
-          <input id="sides" type="number" min="3" max="16" step="1" value="4">
-        </div>
-        <div class="quantity">
-          <input id="depth" type="number" min="1" max="1000" step="1" value="10">
+        <p> Sides and depth</p>
+        <div class="contDisplay">
+          <div class="quantity">
+            <input id="sides" type="number" min="3" max="16" step="1" value="4">
+          </div>
+          <div class="quantity">
+            <input id="depth" type="number" min="1" max="1000" step="1" value="10">
+          </div>
         </div>
       </div>
     </div>
+    <h1>Eye of Metatron</h1>
+    <div class="artical">
+      <div class="disp">
+        <canvas id="eyeOfMetatron" width="500px" height="500px"></canvas>
+        <script type="text/javascript" src="eyeOfMetatron.js">  
+        </script>
+      </div>
+      <div class="controller">
+        <p>Speed</p>
+        <div class="contDisplay">
+          <input id="speed" type="range" value="210" max="400">
+        </div>
+        <p>Amount</p>
+        <div class="contDisplay">
+          <input id="amount" type="range" value="50" max="1000">
+        </div>
+        <p>Angle</p>
+        <div class="contDisplay">
+          <input id="angle2" type="range" value="0" max="360">
+        </div>
+        <p>Radius</p>
+        <div class="contDisplay">
+          <input id="radius" type="range" min="0" value="20" max="100">
+        </div>
+      </div>
+    </div>
+  
   </body>
   <script type="text/javascript" src="inputNumberStyle.js">
+  </script>
+  <script type="text/javascript" src="pageLoad.js">
   </script>
 </html>

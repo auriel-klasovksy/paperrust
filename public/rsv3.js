@@ -10,18 +10,20 @@ var opt = {
   colors1:  [],
   colors2:  []
 }
-window.onload = function() {
+function loadRsv() {
   //for bat-ala
   //the shamanic spiral woman.
-  var canvas = document.getElementById('rsv');
-  paper.setup(canvas);
+  const canvas = document.getElementById('rsv');
+  const scope = new paper.PaperScope();
+  scope.setup(canvas);
+  paper = scope;
   //var socket = io();
   var draws = makeSqueres(1)
   opt.pathes1= draws.array1;
   opt.pathes2 = draws.array2;
 	drawInterArrays(opt.pathes1,opt.pathes2);
   var frames = 200;
-  paper.view.onFrame = function(event){
+  scope.view.onFrame = function(event){
 	  var newangel = document.getElementById("angle").value/4 - opt.angle;
 	  opt.pathes1[0].rotate(newangel);
 	  opt.pathes2[0].rotate(newangel);
@@ -89,7 +91,7 @@ function setUp()  {
   opt.pathes1 = draws.array1;
   opt.pathes2 = draws.array2;
   drawInterArrays(opt.pathes1,opt.pathes2);
-}
+} 
 function updateShape(shapes,ratio) {
   for(let i = 1; i < shapes.length; i++)  {
     var newPath = spiralIn(shapes[i-1],ratio);

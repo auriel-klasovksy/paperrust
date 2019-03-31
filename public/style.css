@@ -10,9 +10,6 @@ body {
 	margin: 0; 
 	padding: 0;
   text-align: center;
-
-    overflow: hidden;
-    height: 100%;
 	}
 header {
   width: 100%;
@@ -25,6 +22,10 @@ header {
   padding-left: 190px;
   color: 'black';
 }
+article {
+	text-decoration: none;
+}
+
 button {
 	border: none;
 	background: transparent;
@@ -43,10 +44,7 @@ button {
 button:hover {
 	background-color: #f9a03f;
 }
-p {
-	size: 15px;
-	text-decoration: underline;
-}
+
 div.nextButon	{
 	display: block;
 	position:absolute;
@@ -56,22 +54,19 @@ div.nextButon	{
 	opacity: 0.5;
 }
 div.controller {
-	display:inline;
-	float: right;
+	display:inline-block;
+	position:relative;
+	right:0;
+	top: -170px;
 }
 div.disp	{
-	display:flex;
-	align: center;
-	float: left;
+	display:inline-block;
+
 }
 div.contDisplay	{
 	height: 60px;
 }
-div.contDisplay, p	{
-	position: relative;
-	right: 80%;
-	top: 30px;
-}
+
 div.colorPicker	{
 	background-color: #f9a03f;
 	display:inline;
@@ -87,20 +82,14 @@ div.colorPicker	{
 	box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d; /* Add cool effects to your sliders! */
 }
 canvas {
-	position: absolute;
-	left: 20%;
+	
 }
-canvas[resize] {
-    width: 50%;
-    height: 100%;
+div.artical {
+	display: block;
+	height: 80%;
+	width: 100%;
 }
-.make-me-sticky {
-  position: -webkit-sticky;
-	position: sticky;
-	top: 0;
-  height: 100%;
-  padding: 0 40px;
-}
+
 input {
 	outline: 0;
 	outline-style: none; -moz-outline-style:none;
